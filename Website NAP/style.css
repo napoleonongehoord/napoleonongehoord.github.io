@@ -1,0 +1,305 @@
+/* colors
+    Red:        #C43D0C        
+    White:      #F5ECDF
+    Grey:       #7A8696
+    Dark Blue:  #1D2333
+    Black:      #1A151C
+
+*/
+
+@font-face {
+font-family: "Glaive";
+src: url("CSS/fonts/glaive_regular-webfont.woff") format("woff"),
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, Arial, serif;
+    background: #F5ECDF;
+    color: #1A151C;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h1,h2,h3 {
+    font-family: "Glaive";
+    margin: 0;
+    padding: 1em 0;
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    text-align: center; 
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+h5 {
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+header {
+    height: 500px;
+    color: #F5ECDF;
+    text-align: center;   
+}
+
+.outer-div {
+    height: inherit;
+    overflow: hidden;
+    
+}
+
+#explosion {
+    background-image: url(Images/Napoleon%20BG.png);
+    height: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+#explosion {
+    animation: explosion-expand 1s cubic-bezier(0.38, 0, 0, 0.99) forwards;
+}
+
+@keyframes explosion-expand {
+    from {
+        
+    }
+    to {
+        transform: scale(1.06) 
+    }
+}
+
+#main-title {
+    padding: 20px 50px 50px 50px;
+    animation: title-slidedown 1s cubic-bezier(0.45, -0.01, 0.55, 0.23);
+    animation-direction: reverse;
+}
+
+@keyframes title-slidedown {
+    from {
+    }
+    to {
+        visibility: hidden;
+        transform: translate(0px, -300px);
+    }
+}
+
+#napoleon {
+    text-align: center;
+    bottom:0; 
+    animation: napoleon-up 1s ease-in-out;
+    animation-direction: reverse;
+    
+}
+#napoleon img {
+    display: inline-block;
+    width: 250px;
+    bottom: 0;
+
+}
+
+@keyframes napoleon-up {
+    from {
+    }
+    to {
+        transform: translate(0px, 20px);
+    }
+}
+
+#showcase h1 {
+    font: imperial;
+    padding-top: 100px;
+    padding-bottom: 0px;
+    
+}
+
+#main {
+    background-color: #F5ECDF;
+    color: #1D2333;
+
+}
+
+.defsheet {
+
+    background-color: #F5ECDF;
+    padding: 30px 5%;
+}
+.line2 {
+    display: block;
+    height: 2px;
+    background-color: #1D2333;
+    margin: 30px 20%;
+}
+
+#section-a{
+    background-color: #1D2333;
+    color:  #1D2333;
+    padding: 0px 10%;
+    
+}
+
+.fotosamen {
+    width: 100%;
+    background-size: cover; 
+}
+#section-ab {
+    margin-top: 40px;
+}
+.info {
+    margin: 0px 30px;
+}
+
+.line {
+    display: block;
+    height: 2px;
+    background-color: #1D2333;
+    margin: 60px 20%;
+}
+
+#section-b{
+}
+
+.uitleg {
+    margin: 50px 0px;
+}
+.portret {
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px 100px
+}
+#portret-spumanti {
+    background-image: url(Images/orkest.jpg);
+}
+#portret-laidos {
+    background-image: url(Images/koor.jpg);
+}
+#portret-charles {
+    background-image: url(Images/Charlie.jpg);
+}
+#portret-charlotte {
+    background-image: url(Images/Charlotte-2.jpg);
+}
+#portret-griet {
+    background-image: url(Images/NapoleonAnnPareyn19L8306cc_2.jpg);
+}
+.info2 {
+    text-align: left;
+    margin: 0px 30px;
+}
+
+#section-c {
+    background-color: #C43D0C;
+    padding: 20px 50px 60px 50px;
+    
+}
+.programma-tile {
+    border-bottom: 1px solid #1D2333;
+    padding: 20px;
+}
+
+
+
+.link {
+    color: #C43D0C;
+}
+.link2 {
+    color: #F5ECDF;
+    margin-top: 30px;
+}
+
+@media(min-width: 700px) {
+    
+    .grid2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0px 10%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .content-wrap, #section-a .defsheet {
+        grid-column: 1/4;
+    }
+    
+    #napoleon img {
+        transform: translate(0px, -60px);
+        width: 400px;
+    }
+    
+    .uitleg {
+        margin: 100px 0px;
+    }
+     .portret {
+        height: inherit;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0px 20px;
+    }
+        
+    .card, section-b {
+        grid-column: span 1;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    #section-c {
+        padding-bottom: 100px;
+        margin: 100px 10%;
+    }
+    
+    .programma-tile {
+        grid-column: span 1;  
+    }
+}
+
+@media(min-width: 1200px) {
+    header {
+        height: 600px;
+    }
+    
+    #napoleon img {
+        transform: translate(0px, -80px);
+        width: 600px;
+    }
+    
+    .portret {
+        height: none;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0px 100px;
+    }
+    
+    .grid2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .uitleg {
+    margin: 100px 0px;
+    }
+    #section-c {
+        padding-bottom: 100px;
+        margin: 100px 10%;
+    }
+}
+
