@@ -22,12 +22,13 @@ body {
     text-align: center;
 }
 
-h1,h2,h3 {
+h1,h2,h3,h6 {
     font-family: "Glaive";
     margin: 0;
     padding: 1em 0;
 }
 h1 {
+    text-align: center;
     font-size: 50px;
 }
 h2 {
@@ -36,10 +37,17 @@ h2 {
     padding-top: 20px;
     padding-bottom: 10px;
 }
+h4 {
+    font-size: 110%;
+}
 h5 {
     text-align: center;
     padding-bottom: 10px;
     margin: 0;
+}
+h6 {
+    text-align: center;
+    font-size: 42px;
 }
 
 p {
@@ -108,7 +116,7 @@ header {
 }
 #napoleon img {
     display: inline-block;
-    width: 250px;
+    width: 300px;
     bottom: 0;
 
 }
@@ -139,10 +147,13 @@ header {
     background-color: #F5ECDF;
     padding: 30px 5%;
 }
+.justify {
+    text-align: justify;
+}
 .line2 {
     display: block;
     height: 2px;
-    background-color: #1D2333;
+    background-color:  #C43D0C ;
     margin: 30px 20%;
 }
 
@@ -154,8 +165,12 @@ header {
 }
 
 .fotosamen {
-    width: 100%;
-    background-size: cover; 
+    background-image: url(Images/A%20en%20J%20142.jpg);
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
 }
 #section-ab {
     margin-top: 40px;
@@ -167,7 +182,7 @@ header {
 .line {
     display: block;
     height: 2px;
-    background-color: #1D2333;
+    background-color:  #C43D0C ;
     margin: 60px 20%;
 }
 
@@ -182,22 +197,22 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0px 100px
+    margin: 0px 10%;
 }
 #portret-spumanti {
-    background-image: url(Images/orkest.jpg);
+    background-image: url(Images/spumanti%202.jpg);
 }
 #portret-laidos {
-    background-image: url(Images/koor.jpg);
+    background-image: url(Images/laidos.jpg);
 }
 #portret-charles {
     background-image: url(Images/Charlie.jpg);
 }
 #portret-charlotte {
-    background-image: url(Images/Charlotte-2.jpg);
+    background-image: url(Images/Charlotte.jpg);
 }
 #portret-griet {
-    background-image: url(Images/NapoleonAnnPareyn19L8306cc_2.jpg);
+    background-image: url(Images/griet.jpg);
 }
 .info2 {
     text-align: left;
@@ -245,6 +260,9 @@ header {
         transform: translate(0px, -60px);
         width: 400px;
     }
+    .fotosamen {
+    height: 450px;
+    }
     
     .uitleg {
         margin: 100px 0px;
@@ -254,7 +272,7 @@ header {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        margin: 0px 20px;
+        margin: 10% 20px;
     }
         
     .card, section-b {
@@ -280,6 +298,9 @@ header {
     #napoleon img {
         transform: translate(0px, -80px);
         width: 600px;
+    }
+        .fotosamen {
+    height: 400px;
     }
     
     .portret {
