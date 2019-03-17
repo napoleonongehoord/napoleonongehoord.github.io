@@ -9,7 +9,16 @@
 
 @font-face {
 font-family: "Glaive";
-src: url("CSS/fonts/glaive_regular-webfont.woff") format("woff"),
+    src: url('glaive_regular-webfont-webfont.eot');
+    src: url('glaive_regular-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('glaive_regular-webfont-webfont.woff2') format('woff2'),
+         url('glaive_regular-webfont-webfont.woff') format('woff'),
+         url('glaive_regular-webfont-webfont.ttf') format('truetype'),
+         url('glaive_regular-webfont-webfont.svg#glaiveregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+    
 }
 
 body {
