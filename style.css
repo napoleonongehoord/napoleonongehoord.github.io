@@ -233,6 +233,14 @@ header {
     padding: 20px 50px 60px 50px;
     
 }
+#section-d {
+    background-color: #1D2333;    
+}
+
+.aftiteling {
+    margin: 20px;
+    
+}
 .programma-tile {
     border-bottom: 1px solid #1D2333;
     padding: 20px;
