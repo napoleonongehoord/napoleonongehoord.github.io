@@ -231,16 +231,14 @@ header {
 #section-c {
     background-color: #C43D0C;
     padding: 20px 50px 60px 50px;
-    
+    margin-bottom: 20%;
 }
 #section-d {
-    background-color: #1D2333;    
+    background-color: #1D2333;   
+    color: #7A8696;
+    padding: 20px;
 }
 
-.aftiteling {
-    margin: 20px;
-    
-}
 .programma-tile {
     border-bottom: 1px solid #1D2333;
     padding: 20px;
