@@ -9,7 +9,22 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/png" href="Images/favicon.png"/>
     <link href="https://fonts.googleapis.com/css?family=Metal+Mania" rel="stylesheet">
+    
     <title>Napoleon ongehoord - een theaterproductie die je moet gezien hebben</title>
+    <iframe src="audio/muziek.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+    </iframe> 
+    <audio autoplay loop style="display: none" id="playAudio">
+        <source src="Audio/muziek.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        var isChrome = /Chrome/.test(navigator.userAgent) && /Google    Inc/.test(navigator.vendor);
+        if(!isChrome){
+        $('#iframeAudio').remove()
+            }
+        else{
+            $('#playAudio').remove() //just to make sure that it will not have 2x audio in the background 
+    </script>
+  }
 </head>
 <body>
     <header class="header" class="grid">
