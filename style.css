@@ -254,6 +254,12 @@ header {
     margin-top: 30px;
 }
 
+#section-e {
+}
+#sponsors {
+    width: 100%;
+}
+
 @media(min-width: 700px) {
     #explosion {
     background-image: url(Images/Napoleon%20BG.png);
