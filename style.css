@@ -106,6 +106,9 @@ header {
     animation: title-slidedown 1s cubic-bezier(0.45, -0.01, 0.55, 0.23);
     animation-direction: reverse;
 }
+#titel {
+    padding-top: 0;
+}
 
 @keyframes title-slidedown {
     from {
